@@ -43,7 +43,11 @@
                {{ content }}
      </div>
 </section>
-
+{% if page.comments %}
+<div class="container">
+   {% include disqus-comments.html %}
+</div>
+{% endif %}
 <section class="cFooter">
    <div class="container ">
       <div class="row">
